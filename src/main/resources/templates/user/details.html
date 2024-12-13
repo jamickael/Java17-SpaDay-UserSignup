@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+    <title>User Details</title>
+</head>
+<body>
+   <h3 th:text="${user.username}"></h3>
+   <h4 th:text="${user.email}"></h4>
+   <p><a th:href="@{/user}" method="POST">Back</a></p>
+</body>
+</html>
